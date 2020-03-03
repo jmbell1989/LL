@@ -1,0 +1,28 @@
+
+<div id="signDiv" style="width: 300px; height: 150px; margin: auto; background-color: lightblue; border-radius: 10px; text-align: center;">
+    <input id="signDiv-username" type="text" placeholder="Username" style="margin-top: 20;"><br>
+    <input id="signDiv-password" type="password" placeholder="Password" style="margin-top: 10;"><br>
+    <button id="signDiv-signIn" style="margin-top: 10;">Log In</button>
+    <button id="signDiv-signUp" style="margin-top: 10;">Sign Up</button>
+</div>
+
+<div id="gameDiv" style="display: none";>
+    <canvas id="ctx" width="760" height="400" style="border:1px solid #000000;"></canvas>
+    <button id="start" style="display: block; position: absolute; top:200px; left:20px;" onclick="startGame()">Start</button>
+    <!--<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>-->
+
+    <ul id="online-users" style="text-align: left;">Online Users:
+    </ul>
+
+    <div id="chat-text" style="width: 760px;height: 100px;overflow-y: scroll">
+        <div>Chat Form</div>
+    </div>
+
+    <form id="chat-form">
+        <input id="chat-input" type="text" style="width: 760px;" placeholder="Message.."></input>
+    </form>
+</div>
+
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/client/src/client.js"></script>
